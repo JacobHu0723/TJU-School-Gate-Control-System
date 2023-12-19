@@ -47,31 +47,58 @@ setInterval(function () {
     if (ms == 10) {
         ms = 0;
         second = second + 1;
-        if (second < 10) {
-            document.getElementById("second").innerHTML = "0" + second + ".";
+        if (second == 60) {
+            second = 0;
+            if (second < 10) {
+                document.getElementById("second").innerHTML = "0" + second + ".";
+            }
+            if (second>=10) {
+                document.getElementById("second").innerHTML = second + ".";
+            }
+            minute = minute + 1;
+            if (minute == 60) {
+                minute = 0;
+                if (minute < 10) {
+                    document.getElementById("minute").innerHTML = "0" + minute + ":";
+                }
+                if (minute>=10) {
+                    document.getElementById("minute").innerHTML = minute + ":";
+                }
+                hour = hour + 1;
+                if (hour == 24) {
+                    hour = 0;
+                    if (hour < 10) {
+                        document.getElementById("hour").innerHTML = "0" + hour + ":";
+                    }
+                    if (hour>=10) {
+                        document.getElementById("hour").innerHTML = hour + ":";
+                    }
+                }
+                else {
+                    if (hour < 10) {
+                        document.getElementById("hour").innerHTML = "0" + hour + ":";
+                    }
+                    if (hour>=10) {
+                        document.getElementById("hour").innerHTML = hour + ":";
+                    }
+                }
+            }
+            else {
+            if (minute < 10) {
+                document.getElementById("minute").innerHTML = "0" + minute + ":";
+            }
+            if (minute>=10) {
+                document.getElementById("minute").innerHTML = minute + ":";
+            }
+            }
         }
-        if (second>=10) {
-            document.getElementById("second").innerHTML = second + ".";
-        }
-    }
-    if (second == 60) {
-        second = 0;
-        minute = minute + 1;
-        if (minute < 10) {
-            document.getElementById("minute").innerHTML = "0" + minute + ":";
-        }
-        if (minute>=10) {
-            document.getElementById("minute").innerHTML = minute + ":";
-        }
-    }
-    if (minute == 60) {
-        minute = 0;
-        hour = hour + 1;
-        if (hour < 10) {
-            document.getElementById("hour").innerHTML = "0" + hour + ":";
-        }
-        if (hour>=10) {
-            document.getElementById("hour").innerHTML = hour + ":";
+        else {
+            if (second < 10) {
+                document.getElementById("second").innerHTML = "0" + second + ".";
+            }
+            if (second>=10) {
+                document.getElementById("second").innerHTML = second + ".";
+            }
         }
     }
     document.getElementById("ms").innerHTML = ms;
