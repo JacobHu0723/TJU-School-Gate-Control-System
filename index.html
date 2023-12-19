@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>天津大学校门管控系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="head">
+        <div id="back-icon"><img class="back-icon" src="arrow.png"></div>
+        <div id="title">扫码结果</div>
+    </div>
+    <div id="content">
+            <div id="result-box">
+                <div id="update-time">更新于：2023-10-26 11:48:12</div>
+                <div id="result">
+                    <div id="date"></div>
+                    <div id="time">
+                        <span id="hour"></span>
+                        <span id="minute"></span>
+                        <span id="second"></span>
+                        <span id="ms"></span>
+                    </div>
+                    <div id="pass-icon"><img class="pass-icon" src="pass.png"></div>
+                    <div id="pass-text">允许通行</div>
+                    <div id="welcome-text">欢迎通过
+                        <select>
+                            <option>卫津路东门</option>
+                            <option>卫津路西门</option>
+                            <option>卫津路北门</option>
+                            <option>北洋园南门</option>
+                            <option>北洋园北门</option>
+                            <option>北洋园东门</option>
+                         </select>
+                         进口。
+                    </div>
+                    <div id="name-box">
+                        <div id="name-title">姓名：</div>
+                        <div id="name"><input value="张三"></div>
+                    </div>
+                    <div id="id-box">
+                        <div id="id-title">学工号：</div>
+                        <div id="id"><input value="3023231234"></div>
+                    </div>
+                    <div id="type-box">
+                        <div id="type-title">人员类型：</div>
+                        <div id="type"><select>
+                            <option>本科生</option>
+                            <option>硕士生</option>
+                            <option>博士生</option>
+                        </select>
+                    </div>
+            </div>
+    </div>
+
+        <script src="script.js"></script>
+    </body>
+    </html>
