@@ -93,7 +93,8 @@ img.back-icon {
     margin-top:5px;
     margin-left:49%;
     font-size: 21px;
-    font-weight: 600;
+    font-weight: bold;
+    
 }
 
 span {
@@ -149,6 +150,7 @@ img.pass-icon {
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Chrome and Safari */
     width: min-content;
+    background-color: #fff;
 }
 
 #welcome-text select:focus {
@@ -261,6 +263,7 @@ img.pass-icon {
     -moz-appearance: none; /* Firefox */
     -webkit-appearance: none; /* Chrome and Safari */
     width: min-content;
+    background-color: #fff;
 }
 
 #type select:focus {
