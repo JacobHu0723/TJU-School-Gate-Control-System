@@ -1,5 +1,5 @@
 ﻿// 定义版本号和缓存名称
-var cacheStorageKey = 'minimal-pwa-1';
+var cacheStorageKey = 'minimal-pwa-2';
 
 // 定义需要缓存的文件列表
 var cacheList = [
