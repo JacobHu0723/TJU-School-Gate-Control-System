@@ -4,7 +4,7 @@
   "version":"1.0.0",
   "author":"Jacob Hu",
   "short_name": "天大门禁",
-  "display": "minimal-ui",
+  "display": "standalone",
   "start_url": "https://gate.jacobhu.eu.org/",
   "id":"TJU-Gate",
   "theme_color": "#1f60c8",
