@@ -1,0 +1,26 @@
+﻿{
+  "name": "天津大学校门管控系统",
+  "description":"天津大学校门管控系统",
+  "version":"1.0.0",
+  "author":"Jacob Hu",
+  "short_name": "天大门禁",
+  "display": "fullscreen",
+  "start_url": "https://gate.jacobhu.eu.org/",
+  "id":"TJU-Gate",
+  "theme_color": "#1f60c8",
+  "background_color": "#1f60c8",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "https://gate.jacobhu.eu.org/image/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {"src": "https://gate.jacobhu.eu.org/image/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

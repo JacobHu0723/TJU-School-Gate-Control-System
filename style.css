@@ -126,10 +126,11 @@ img.pass-icon {
     position: relative;
     margin-top:10px;
     left: 42%;
+    right: 0%;
     color:#ff0000;
     font-weight: 700;
     font-size: 27px;
-    width: 150px;
+    width: 120px;
 }
 
 #welcome-text {

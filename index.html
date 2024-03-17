@@ -5,10 +5,19 @@
     <title>天津大学校门管控系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json" />
+    <script type="text/javascript">  /*PWA*/
+        if (navigator.serviceWorker != null) {
+          navigator.serviceWorker.register('./sw.js')
+            .then(function (registration) {
+              console.log('Registered events at scope: ', registration.scope);
+            });
+        }
+      </script>
 </head>
 <body>
     <div id="head">
-        <div id="back-icon"><img class="back-icon" src="arrow.png"></div>
+        <div id="back-icon"><img class="back-icon" src="./image/arrow.png"></div>
         <div id="title">扫码结果</div>
     </div>
     <div id="content">
@@ -22,7 +31,7 @@
                         <span id="second"></span>
                         <span id="ms"></span>
                     </div>
-                    <div id="pass-icon"><img class="pass-icon" src="pass.png"></div>
+                    <div id="pass-icon"><img class="pass-icon" src="./image/pass.png"></div>
                     <div id="pass-text">允许通行</div>
                     <div id="welcome-text">欢迎通过
                         <select id="gate">
