@@ -129,6 +129,7 @@ img.pass-icon {
     color:#ff0000;
     font-weight: 700;
     font-size: 27px;
+    width: 150px;
 }
 
 #welcome-text {
@@ -155,6 +156,12 @@ img.pass-icon {
 
 #welcome-text select:focus {
     outline: none;
+}
+
+#gate {
+    position: relative;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
 }
 
 #name-box {
